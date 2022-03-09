@@ -1,0 +1,196 @@
+<resources>
+    <string name="app_name">Ferias</string>
+    <string name="map_key">AIzaSyAbPOAA0YXkVobpb1KJW80j0qPk0KXgXnk</string>
+
+    <string name="login">Login</string>
+    <string name="register_with_email">Register with Email</string>
+    <string name="reset_password">Reset password</string>
+    <string name="register">Register now</string>
+    <string name="send_password">Send Password</string>
+    <string name="see_results">See results</string>
+    <string name="read_more">Read More</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="see_all">See All</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="register_the_hotel">Register the hotel</string>
+    <string name="manage_your_hotel">Manage your hotel</string>
+
+    <string name="forgot_password">I forgot the password</string>
+    <string name="forgot_password_title">Forgot your password?</string>
+    <string name="forgot_password_mensage">No problem! We will send you a link to reset your password. Please enter your email address</string>
+
+    <string name="first">first…</string>
+    <string name="and_next">and next…</string>
+
+    <string name="remember">Remember me</string>
+    <string name="choose_account_type">Choose account type</string>
+    <string name="create_your_account">Create your account</string>
+
+    <string name="hotel_manager">Hotel Manager</string>
+    <string name="traveler">Traveler</string>
+
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="age">Age</string>
+    <string name="phone">Phone</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="old_password">Old Password</string>
+
+    <string name="weak">Weak</string>
+    <string name="medium">Medium</string>
+    <string name="strong">Strong</string>
+    <string name="very_strong">Very Strong</string>
+
+    <string name="select_units_for_distance">Select Units for Distance</string>
+    <string name="select_the_currency">Select The Currency</string>
+    <string name="select_the_language">Select The Language</string>
+
+    <string name="metric">Metric</string>
+    <string name="imperial">Imperial</string>
+
+    <string name="euro">Euro</string>
+    <string name="dolar">Dolar</string>
+    <string name="ienes">Ienes</string>
+
+    <string name="english">English</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="italian">Italian</string>
+
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_mensage">Permanently delete your account</string>
+
+    <string name="client_name">Client name</string>
+    <string name="hotel_name">Hotel Name</string>
+    <string name="place_name_found">Place Name found</string>
+
+    <string name="plan_trip">Plan your next trip!</string>
+    <string name="where_you_want_to_go">Where you want to go?</string>
+    <string name="when">When?</string>
+    <string name="guests">Guests</string>
+
+    <string name="select_date">Select a Date</string>
+    <string name="date_selected">Date Selected</string>
+    <string name="number_of_people_selected">Number of people selected</string>
+    <string name="revenue_generated">Revenue generated:</string>
+    <string name="hotel_price">Hotel Price</string>
+    <string name="rating">Rating</string>
+    <string name="hotel_description_example">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="photos">Photos</string>
+    <string name="book_for">Book for</string>
+
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+
+    <string name="how_many_people">How many people?</string>
+    <string name="adults">Adults</string>
+    <string name="children">Children</string>
+    <string name="yrs_or_older">12 yrs or older</string>
+    <string name="from_0_to_12_yrs_old">from 0 to 12 yrs old</string>
+
+    <string name="hotels_found_at">Hotels found at</string>
+    <string name="place_typed">Place Typed</string>
+    <string name="my_bookings">My Bookings</string>
+
+    <string name="hello_mensage">Hi,</string>
+
+    <string name="don_t_know_where_to_go">Don\'t know where to go…?</string>
+    <string name="choose_mood">Choose based on your mood!</string>
+
+    <string name="total_profits">Total Profits</string>
+    <string name="profits">Profits</string>
+    <string name="season_profits">Season\'s profits</string>
+
+    <string name="your_hotels">Your hotels</string>
+
+    <string name="register_your_hotel">Register your hotel!</string>
+    <string name="edit_your_hotel">Edit your hotel!</string>
+    <string name="add_cover_photo">Add cover photo</string>
+    <string name="hotel_rating">Hotel Rating</string>
+    <string name="total_rooms">Total Rooms</string>
+    <string name="price_per_night">Price per night</string>
+    <string name="select_features_of_hotel">Select features of hotel</string>
+    <string name="description">Description</string>
+    <string name="add_other_photos">Add other photos to show</string>
+    <string name="how_is_the_area_around">How is the area around?</string>
+    <string name="choose_more_than_one">(You can choose more than one)</string>
+
+    <string name="see_your_bookings">See your bookings</string>
+    <string name="about_your_last_clients">about your last clients</string>
+
+    <string-array name="Features">
+        <item>Restaurant</item>
+        <item>Service Room</item>
+        <item>Pub</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+        <item>Breakfast</item>
+        <item>24h Reception</item>
+        <item>Air conditioner</item>
+        <item>Wifi</item>
+        <item>Outside Pool</item>
+        <item>Inside Pool</item>
+        <item>SPA</item>
+        <item>Garden</item>
+        <item>Gymnasium</item>
+        <item>Sauna</item>
+    </string-array>
+
+    <string-array name="Moods">
+        <item>Nightlife, clubs and parties</item>
+        <item>Ready to be explored! Embark on an adventure</item>
+        <item>You can do some sport activities</item>
+        <item>Very chill, perfect to relax</item>
+        <item>Admire the city and local shops</item>
+    </string-array>
+
+    <string-array name="MoodsIcons">
+        <item>ic_mood_party</item>
+        <item>ic_mood_adventure</item>
+        <item>ic_mood_sport</item>
+        <item>ic_mood_relax</item>
+        <item>ic_mood_city</item>
+    </string-array>
+
+    <string name="type_chart">Type chart</string>
+    <string name="months">Months</string>
+    <string name="seasons">Seasons</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_type_of_chart">Select type of chart</string>
+
+    <string-array name="months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="seasons_moths">
+        <item>December,January,February</item>
+        <item>March,April,May</item>
+        <item>June,July,August</item>
+        <item>September,October,November</item>
+    </string-array>
+
+    <string-array name="seasons">
+        <item>Winter</item>
+        <item>Spring</item>
+        <item>Summer</item>
+        <item>Autumn</item>
+    </string-array>
+
+</resources>

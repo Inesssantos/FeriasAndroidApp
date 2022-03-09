@@ -1,0 +1,218 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <!-- ALWAYS CHECK IF MATCHES THE LIGHT THEME ! -->
+
+    <style name="Theme.Ferias" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorOnPrimary">@color/primary_white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/accent_color</item>
+        <item name="android:colorBackground">@color/background_color</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="backgroundColor">@color/background_color</item>
+        <item name="backgroundTint">@color/background_color</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorOnSecondary">@color/primary_white</item>
+        <!-- Fonts -->
+        <item name="textAppearanceHeadline1">@style/custom_headline1</item>
+        <item name="textAppearanceHeadline2">@style/custom_headline2</item>
+        <item name="textAppearanceHeadline3">@style/custom_headline3</item>
+        <item name="textAppearanceHeadline4">@style/custom_headline4</item>
+        <item name="textAppearanceHeadline5">@style/custom_headline5</item>
+        <item name="textAppearanceHeadline6">@style/custom_headline6</item>
+        <item name="textAppearanceSubtitle1">@style/custom_subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/custom_subtitle2</item>
+        <item name="textAppearanceBody1">@style/custom_body1</item>
+        <item name="textAppearanceBody2">@style/custom_body2</item>
+        <item name="textAppearanceCaption">@style/custom_caption</item>
+        <item name="textAppearanceOverline">@style/custom_overline</item>
+        <!-- Components -->
+        <item name="materialCardViewStyle">@style/custom_cardview</item>
+        <item name="materialButtonStyle">@style/MyButtonTheme</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="extendedFloatingActionButtonStyle">@style/Widget.App.ExtendedFloatingActionButton</item>
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+        <item name="textInputStyle">@style/myEdittextTheme</item>
+    </style>
+
+    <!-- Fonts -->
+
+    <style name="custom_headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">@font/archivo_bold</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">@font/archivo_semibold</item>
+        <item name="android:textColor">@color/secondary_white</item>
+    </style>
+
+    <style name="custom_subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">@font/archivo_semibold</item>
+        <item name="android:textColor">@color/secondary_white</item>
+    </style>
+
+    <style name="custom_body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+
+    <style name="custom_body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/secondary_white</item>
+    </style>
+
+    <style name="custom_button_font" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/archivo_semibold</item>
+    </style>
+
+    <style name="custom_caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">@font/archivo_medium</item>
+        <item name="android:textColor">@color/secondary_white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="custom_overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">@font/archivo_medium</item>
+    </style>
+
+    <!-- shapes -->
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="CustomDatePicker" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- dont know how to make the header color different from the primary color... to fix -->
+        <item name="colorPrimary">@color/accent_color</item>
+        <item name="colorOnPrimary">@color/primary_white</item>
+        <item name="colorSurface">@color/surface_color</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="buttonBarPositiveButtonStyle">@style/CustomDatePicker.custom_positive_btn_dialog</item>
+        <item name="buttonBarNegativeButtonStyle">@style/CustomDatePicker.custom_negative_btn_dialog</item>
+    </style>
+
+    <style name="CustomDatePicker.custom_positive_btn_dialog" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/primary_white</item>
+    </style>
+    <style name="CustomDatePicker.custom_negative_btn_dialog" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/secondary_white</item>
+    </style>
+
+    <!-- Components -->
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+    <style name="custom_cardview" parent="Widget.MaterialComponents.CardView">
+        <item name="elevation">0dp</item>
+        <item name="cardCornerRadius">15dp</item>
+        <item name="cardBackgroundColor">@color/surface_color</item>
+    </style>
+
+    <style name="Widget.App.ExtendedFloatingActionButton" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
+        <item name="materialThemeOverlay">@style/myCustomThemeForExtendedFab</item>
+        <item name="shapeAppearanceOverlay">@style/customExtendedFAB</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="customExtendedFAB">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="myCustomThemeForExtendedFab" parent="">
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorOnSecondary">@color/primary_white</item>
+    </style>
+
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/myCustomThemeForNormalFab</item>
+        <item name="shapeAppearanceOverlay">@style/customNormalFAB</item>
+        <item name="fabCustomSize">50dp</item>
+        <item name="maxImageSize">16dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    <style name="customNormalFAB">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="myCustomThemeForNormalFab" parent="">
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorOnSecondary">@color/primary_white</item>
+    </style>
+
+    <style name="MyButtonTheme" parent="Widget.MaterialComponents.Button">
+        <item name="android:padding">24dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="rippleColor">@color/accent_color</item>
+        <item name="shapeAppearance">@style/ShapeAppearanceButton</item>
+        <item name="iconSize">16dp</item>
+    </style>
+    <style name="ShapeAppearanceButton" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <!-- to do: text input style -->
+    <style name="myEdittextTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/accent_color</item>
+        <item name="hintTextColor">@color/accent_color</item>
+        <item name="android:textColorHint">@color/secondary_white</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="popupMenuStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:popupBackground">@drawable/background_popup_menu</item>
+    </style>
+
+    <style name="date_dialog_theme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/accent_color</item>                   <!--header background-->
+        <item name="android:windowBackground">@color/background_color</item>     <!--calendar background-->
+        <item name="android:colorControlActivated">@color/accent_color</item> <!--selected day-->
+        <item name="android:textColorPrimary">@color/white</item> <!--days of the month-->
+        <item name="android:textColorSecondary">@color/white</item>    <!--days of the week-->
+    </style>
+
+</resources>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login">
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.ferias.ui.common.login.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_forgotPassword"
+            app:destination="@id/forgot_password" />
+        <action
+            android:id="@+id/action_login_to_registration"
+            app:destination="@id/registration" />
+        <action
+            android:id="@+id/action_login_to_hotel_manager_home"
+            app:destination="@id/hotel_manager_home" />
+        <action
+            android:id="@+id/action_login_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgot_password"
+        android:name="com.example.ferias.ui.common.login.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/registration"
+        android:name="com.example.ferias.ui.common.registration.Registration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registration_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/security"
+        android:name="com.example.ferias.ui.common.profile.Security"
+        android:label="fragment_profile_security"
+        tools:layout="@layout/fragment_profile_security" >
+        <action
+            android:id="@+id/action_security_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotel_manager_home"
+        android:name="com.example.ferias.ui.hotel_manager.home.Home"
+        android:label="hotel_manager_fragment_home"
+        tools:layout="@layout/hotel_manager_fragment_home" >
+        <action
+            android:id="@+id/action_hotel_manager_home_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_hotel_manager_home_self"
+            app:destination="@id/hotel_manager_home" />
+        <action
+            android:id="@+id/action_hotel_manager_home_to_hotel_manage"
+            app:destination="@id/hotel_manage" />
+        <action
+            android:id="@+id/action_hotel_manager_home_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/traveler_home"
+        android:name="com.example.ferias.ui.traveler.home.Home"
+        android:label="traveler_fragment_home"
+        tools:layout="@layout/traveler_fragment_home" >
+        <action
+            android:id="@+id/action_traveler_home_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_traveler_home_self"
+            app:destination="@id/traveler_home" />
+        <action
+            android:id="@+id/action_traveler_home_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_traveler_home_to_traveler_search"
+            app:destination="@id/search_hotel" />
+        <action
+            android:id="@+id/action_traveler_home_to_favorites"
+            app:destination="@id/favorites" />
+        <action
+            android:id="@+id/action_traveler_home_to_bookings"
+            app:destination="@id/bookings" />
+        <action
+            android:id="@+id/action_traveler_home_to_traveler_search_nearby"
+            app:destination="@id/traveler_search_nearby" />
+        <action
+            android:id="@+id/action_traveler_home_to_traveler_hotel_on_map"
+            app:destination="@id/traveler_hotel_on_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.ferias.ui.common.profile.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_hotel_manager_home"
+            app:destination="@id/hotel_manager_home" />
+        <action
+            android:id="@+id/action_profile_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotel_manage"
+        android:name="com.example.ferias.ui.hotel_manager.manage_hotels.Hotel_Manage"
+        android:label="hotel_manager_fragment_manage_hotels"
+        tools:layout="@layout/hotel_manager_fragment_manage_hotels" >
+        <action
+            android:id="@+id/action_hotel_manage_to_hotel_registration"
+            app:destination="@id/hotel_registration" />
+        <action
+            android:id="@+id/action_hotel_manage_to_hotel_manager_home"
+            app:destination="@id/hotel_manager_home" />
+        <action
+            android:id="@+id/action_hotel_manage_to_hotel_edit"
+            app:destination="@id/hotel_edit" />
+        <action
+            android:id="@+id/action_hotel_manage_to_hotel_view"
+            app:destination="@id/hotel_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotel_registration"
+        android:name="com.example.ferias.ui.hotel_manager.manage_hotels.Hotel_Registration"
+        android:label="hotel_manager_fragment_hotel_registration"
+        tools:layout="@layout/hotel_manager_fragment_hotel_registration" >
+        <action
+            android:id="@+id/action_hotel_registration_to_hotel_manage"
+            app:destination="@id/hotel_manage" />
+    </fragment>
+    <fragment
+        android:id="@+id/search_hotel"
+        android:name="com.example.ferias.ui.traveler.search_hotel.SearchHotel"
+        android:label="traveler_fragment_search_hotel"
+        tools:layout="@layout/traveler_fragment_search_hotel" >
+        <action
+            android:id="@+id/action_searchHotel_to_traveler_home"
+            app:destination="@id/traveler_home" />
+        <action
+            android:id="@+id/action_search_hotel_to_traveler_hotelview"
+            app:destination="@id/traveler_hotelview" />
+    </fragment>
+    <fragment
+        android:id="@+id/traveler_search_nearby"
+        android:name="com.example.ferias.ui.traveler.search_nearby_hotels.SearchHotelNearby"
+        android:label="fragment_traveler_search"
+        tools:layout="@layout/traveler_fragment_hotel_search" >
+        <action
+            android:id="@+id/action_traveler_search_to_traveler_hotelview"
+            app:destination="@id/traveler_hotelview" />
+        <action
+            android:id="@+id/action_traveler_search_nearby_to_traveler_hotelview"
+            app:destination="@id/traveler_hotelview" />
+        <action
+            android:id="@+id/action_traveler_search_nearby_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/traveler_hotelview"
+        android:name="com.example.ferias.ui.traveler.hotels.HotelViewer"
+        android:label="fragment_traveler_hotelview"
+        tools:layout="@layout/traveler_fragment_hotel_view" >
+        <action
+            android:id="@+id/action_traveler_hotelview_to_traveler_home"
+            app:destination="@id/traveler_home" />
+        <action
+            android:id="@+id/action_traveler_hotelview_self"
+            app:destination="@id/traveler_hotelview" />
+        <action
+            android:id="@+id/action_traveler_hotelview_to_favorites"
+            app:destination="@id/favorites" />
+        <action
+            android:id="@+id/action_traveler_hotelview_to_traveler_search_nearby"
+            app:destination="@id/traveler_search_nearby" />
+        <action
+            android:id="@+id/action_traveler_hotelview_to_traveler_hotel_on_map"
+            app:destination="@id/traveler_hotel_on_map" />
+        <action
+            android:id="@+id/action_traveler_hotelview_to_search_hotel"
+            app:destination="@id/search_hotel" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="com.example.ferias.ui.traveler.favorites.Favorites"
+        android:label="fragment_favorites"
+        tools:layout="@layout/traveler_fragment_favorites_hotels" >
+        <action
+            android:id="@+id/action_favorites_to_traveler_hotelview"
+            app:destination="@id/traveler_hotelview" />
+        <action
+            android:id="@+id/action_favorites_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/hotel_edit"
+        android:name="com.example.ferias.ui.hotel_manager.manage_hotels.Hotel_Edit"
+        android:label="hotel_edit">
+        <action
+            android:id="@+id/action_hotel_edit_to_hotel_manage"
+            app:destination="@id/hotel_manage" />
+        <action
+            android:id="@+id/action_hotel_edit_to_hotel_view"
+            app:destination="@id/hotel_view" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotel_view"
+        android:name="com.example.ferias.ui.hotel_manager.manage_hotels.Hotel_View"
+        android:label="hotel_view">
+        <action
+            android:id="@+id/action_hotel_view_to_hotel_manage"
+            app:destination="@id/hotel_manage" />
+        <action
+            android:id="@+id/action_hotel_view_to_hotel_edit"
+            app:destination="@id/hotel_edit" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookings"
+        android:name="com.example.ferias.ui.traveler.myBookings.MyBookings"
+        android:label="fragment_bookings"
+        tools:layout="@layout/traveler_fragment_mybookings_hotels" >
+        <action
+            android:id="@+id/action_bookings_self"
+            app:destination="@id/bookings" />
+        <action
+            android:id="@+id/action_bookings_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/traveler_hotel_on_map"
+        android:name="com.example.ferias.ui.traveler.search_hotel_on_map.HotelOnMap"
+        android:label="traveler_fragment_hotel_on_map"
+        tools:layout="@layout/traveler_fragment_hotel_on_map" >
+        <action
+            android:id="@+id/action_traveler_hotel_on_map_to_traveler_hotelview"
+            app:destination="@id/traveler_hotelview" />
+        <action
+            android:id="@+id/action_traveler_hotel_on_map_to_traveler_home"
+            app:destination="@id/traveler_home" />
+    </fragment>
+
+
+</navigation>

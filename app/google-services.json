@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "555290601109",
+    "project_id": "ferias-2021-cafoscari-project",
+    "storage_bucket": "ferias-2021-cafoscari-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555290601109:android:21ecbbfc9329d9d9209d9c",
+        "android_client_info": {
+          "package_name": "com.example.ferias"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555290601109-mmg6tnr7s0d4pkvoocpb04c03307utma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ferias",
+            "certificate_hash": "9c1a022166b1d947164a1e93b784724f23efbf11"
+          }
+        },
+        {
+          "client_id": "555290601109-3bdlrj95vosr9efc80q3d15k775prkpg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP31C-_SRZ5FxF79oTMQ8VRAgZG25EWAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555290601109-3bdlrj95vosr9efc80q3d15k775prkpg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

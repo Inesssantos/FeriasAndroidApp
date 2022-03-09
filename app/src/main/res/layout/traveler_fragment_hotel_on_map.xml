@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.traveler.search_hotel_on_map.HotelOnMap">
+
+    <SearchView
+        android:id="@+id/sv_location_OnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_popup_menu"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:inputType="textCapWords"
+        android:queryHint="Search..."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_parent_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_baseline_layers"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="35dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_satellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fab_parent_map"
+        app:layout_constraintEnd_toEndOf="@+id/fab_parent_map"
+        app:layout_constraintStart_toStartOf="@+id/fab_parent_map"
+        app:maxImageSize="35dp"
+        app:srcCompat="@drawable/ic_baseline_satellite" />
+
+    <TextView
+        android:id="@+id/tv_satellite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:text="Satellite"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_satellite"
+        app:layout_constraintStart_toEndOf="@+id/fab_satellite"
+        app:layout_constraintTop_toTopOf="@+id/fab_satellite" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_terrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fab_satellite"
+        app:layout_constraintEnd_toEndOf="@+id/fab_satellite"
+        app:layout_constraintStart_toStartOf="@+id/fab_satellite"
+        app:maxImageSize="35dp"
+        app:srcCompat="@drawable/ic_baseline_terrain" />
+
+    <TextView
+        android:id="@+id/tv_terrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:text="Terrain"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_terrain"
+        app:layout_constraintStart_toEndOf="@+id/fab_terrain"
+        app:layout_constraintTop_toTopOf="@+id/fab_terrain" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/fab_terrain"
+        app:layout_constraintEnd_toEndOf="@+id/fab_terrain"
+        app:layout_constraintStart_toStartOf="@+id/fab_terrain"
+        app:maxImageSize="35dp"
+        app:srcCompat="@drawable/ic_baseline_panorama" />
+
+    <TextView
+        android:id="@+id/tv_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@null"
+        android:text="Normal"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/fab_normal"
+        app:layout_constraintStart_toEndOf="@+id/fab_normal"
+        app:layout_constraintTop_toTopOf="@+id/fab_normal" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/mapview"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/filter_btn_onMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_rectangle_for_buttons"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_filterlist"
+        app:layout_constraintBottom_toTopOf="@+id/fab_parent_map"
+        app:layout_constraintEnd_toEndOf="@+id/fab_parent_map"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="35dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/filter_popup_cv_onMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/filter_btn_onMap"
+        app:layout_constraintStart_toStartOf="@+id/filter_btn_onMap">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/searchFilter_party_onMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:text="🎉 Party mood"
+                android:textAllCaps="false" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/searchFilter_Chill_onMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:text="⛱️ Chill mood"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_white" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/searchFilter_Adventure_onMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:text="⛰ Adventure mood"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_white" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/searchFilter_sports_onMap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginBottom="8dp"
+                android:gravity="center|left"
+                android:text="⛷️ Sports mood"
+                android:textAllCaps="false"
+                android:textColor="@color/primary_white" />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/min_price_onMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_search_1_active"
+                    android:drawableRight="@drawable/ic_euro"
+                    android:ems="10"
+                    android:hint="Min Price"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textAppearance="@style/custom_subtitle2"
+                    android:textColor="@color/primary_white"
+                    android:textColorHint="@color/tertiary_white" />
+
+                <EditText
+                    android:id="@+id/max_price_onMap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_search_1_active"
+                    android:drawableEnd="@drawable/ic_euro"
+                    android:ems="10"
+                    android:hint="Max price"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textAppearance="@style/custom_subtitle2"
+                    android:textColor="@color/primary_white"
+                    android:textColorHint="@color/tertiary_white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

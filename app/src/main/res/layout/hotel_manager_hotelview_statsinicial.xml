@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        style="?attr/textAppearanceHeadline4"
+        android:id="@+id/totalProfitsByHotel"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_width="wrap_content"
+        android:text="@string/total_profits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="?attr/textAppearanceHeadline5"
+        android:id="@+id/hotelProfits"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/profits"
+        app:layout_constraintBottom_toBottomOf="@+id/totalProfitsByHotel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/totalProfitsByHotel"
+        app:layout_constraintTop_toTopOf="@+id/totalProfitsByHotel" />
+
+    <TextView
+        android:id="@+id/seasonsProfits"
+        style="?attr/textAppearanceSubtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="209dp"
+        android:layout_marginEnd="82dp"
+        android:text="@string/season_profits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <View
+        android:background="?android:attr/listDivider"
+        android:id="@+id/divider2"
+        android:layout_height="2dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="336dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalProfitsByHotel" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/activity_admin_pieChart"
+        android:layout_width="0dp"
+        android:layout_height="277dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seasonsProfits">
+
+    </com.github.mikephil.charting.charts.PieChart>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/type_chart"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/months"
+        android:textOn="@string/seasons"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/activity_admin_pieChart"
+        app:layout_constraintEnd_toStartOf="@+id/seasonsProfits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
